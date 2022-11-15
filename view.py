@@ -23,11 +23,11 @@ def Get_mode():
 #Библиотека операций    
 mode = {'+': 'сложения', '-': 'вычитания', '*': 'умножения', '/': 'деления'}
 
-def Return_result(res, oper):
+def Print_result(oper, n1, n2, res):
     ''' 
     Вывод результата расчета
     '''
-    return f'Результат операции {mode[oper]} = {res}'
+    print(f'Результат операции {mode[oper]} чисел {n1} и {n2} = {res}')
 
 def Get_rational_value():
     ''' 
@@ -45,6 +45,7 @@ def Get_complex_value():
     print('Например: 2+1j')
     value = complex(input())
     return value
+
 
 # print('Введите первое число')  #- ДЛЯ РAЦИОНАЛЬНЫХ ЧИСЕЛ - ОК
 # num1 = get_rational_value()
