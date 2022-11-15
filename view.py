@@ -33,37 +33,15 @@ def Get_rational_value():
     ''' 
     Ввод рационального числа
     '''
-    value1 = float(input('Введите первое число '))
-    value2 = float(input('Введите второе число '))
-
-    return value1, value2
+    value = float(input())
+    return value
 
 def Get_complex_value():
     ''' 
     Ввод комплексного числа в формате
     'a+bi'
     '''
-    value1 = complex(input('Введите первое комплексное число в формате: a+bi.\n'
-                            'Например: 2+1j. Без пробелов.  '))
-    
-    value2 = complex(input('Введите второе комплексное число в формате: a+bi.\n'
-                            'Например: 2+1j. Без пробелов.  '))
-
-    return value1, value2
-
-
-# print('Введите первое число')  #- ДЛЯ РAЦИОНАЛЬНЫХ ЧИСЕЛ - ОК
-# num1 = get_rational_value()
-# print('Введите второе число')
-# num2 = get_rational_value()
-# resul = num1 + num2
-# operat = get_mode()
-# print(return_result(resul, operat))
-
-# my_compl_val1 = Get_complex_value() #- ДЛЯ КОМПЛЕКСНЫХ ЧИСЕЛ - ОК
-# print(my_compl_val1)
-# print(type(my_compl_val1))
-# my_compl_val2 = Get_complex_value()
-# print(f'"SUM = {my_compl_val1 + my_compl_val2}')
-
-
+    print('Введите комплексное число в сл. формате: a+bi. Без пробелов')
+    print('Например: 2+1j')
+    value = complex(input())
+    return value
