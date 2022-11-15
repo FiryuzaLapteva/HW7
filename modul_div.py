@@ -1,5 +1,5 @@
 # Деление рациональных чисел
-def Division_real(a,b: float):
+def Division(a,b: float):
     return a / b
 
 # Деление комплексных чисел
