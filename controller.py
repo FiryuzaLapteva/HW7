@@ -31,6 +31,7 @@ def Launch_project():
             result = modul_multi.Mult_compl(num1, num2)
         elif operat == '/':
             result = modul_div.Division_compl(num1, num2)
+    calc_logger(num1, num2, operat, result)
 
     Print_result(operat, num1, num2, result)
 
